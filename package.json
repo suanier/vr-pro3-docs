@@ -1,0 +1,26 @@
+{
+  "name": "vr-pro3-docs",
+  "version": "1.0.0",
+  "description": "vr-pro3 第三方api对接文档",
+  "main": "index.js",
+  "scripts": {
+    "start": "yuque-hexo clean && yuque-hexo sync"
+  },
+  "author": "yangsheng",
+  "license": "ISC",
+  "dependencies": {
+    "yuque-hexo": "^1.7.0"
+  },
+  "yuqueConfig": {
+    "postPath": "docs",
+    "cachePath": "yuque.json",
+    "mdNameFormat": "title",
+    "adapter": "markdown",
+    "concurrency": 5,
+    "baseUrl": "https://visbodydev.yuque.com/api/v2",
+    "login": "co9793",
+    "repo": "cy2005",
+    "onlyPublished": true,
+    "onlyPublic": false
+  }
+}

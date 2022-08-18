@@ -1,0 +1,46 @@
+# workflow name
+name: Deploy To Github Pages
+
+# 当有 push 到仓库和外部触发的时候就运行
+on: [push, repository_dispatch]
+
+# YUQUE_TOKEN
+# Github_SSH_PRIVATE_KEY
+jobs:
+  deploy: 
+    name: Deploy markdown To Pages
+    runs-on: ubuntu-latest 
+    env:
+      TZ: Asia/Shanghai    
+        
+    steps:
+    # 检出当前存储库，在工作流中使用
+    # from: https://github.com/actions/checkout
+    - name: Checkout Repository master branch
+      uses: actions/checkout@master 
+      
+    # from: https://github.com/actions/setup-node  
+    - name: Setup Node.js 10.x 
+      uses: actions/setup-node@master
+      with:
+        node-version: "10.x"
+    
+    # 同步语雀知识库文档
+    # from https://github.com/x-cold/yuque-hexo
+    - name: Setup Hexo Dependencies and Generate Public Files
+      env:
+        YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+      run: |
+        npm install yuque-hexo -g
+        npm run start
+        find docs/* ! -name "VR-PRO3*.md" -type f -print -exec rm -rf {} \;
+
+    # from https://github.com/peaceiris/actions-gh-pages    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          publish_branch: master
+          publish_dir: ./docs
+          destination_dir: ./docs
+          # commit_message: ${{ github.event.head_commit.message }}
