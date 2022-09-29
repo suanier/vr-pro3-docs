@@ -1281,7 +1281,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 |合成推送项目 |说明|可访问接口|
 |:-----  |:-----|-----                 |
 |bia_status|体成分|3.3.1、3.3.2、3.3.3、3.3.4、3.3.5|
-|eval_status|静态体态|3.3.3、3.4.1、3.4.2|
+|eval_status|静态体态|3.3.4、3.4.1、3.4.2|
 |girth_status|围度测量|3.4.3、3.4.4|
 |eval_shoulder_status |肩部检测|3.4.5|
 
