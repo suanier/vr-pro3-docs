@@ -369,7 +369,7 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 | -------------------- | ---- | ------ | ---------------------------------------- |
 | scan_id              | 是   | string | 扫描 ID                                  |
 | device_id            | 是   | string | 设备 ID                                  |
-| time                 | 是   | date   | 完成时间 时间格式 2018-06-25 10:10:10    |
+| time                 | 是   | date   | 完成时间 时间格式 2018-06-25 12:00:00    |
 | data                 | 否   | object | 用户信息                                 |
 | age                  | 否   | int    | 年龄                                     |
 | birthday             | 否   | string | 生日                                     |
