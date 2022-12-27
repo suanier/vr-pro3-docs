@@ -100,7 +100,7 @@ Content-Type: application/json
 对接客户的公众号，替换设备默认显示的维塑公众号二维码。
 对接成功后维塑提供报告查看地址，客户将地址自行配置到公众号菜单，用户扫码后可通过公众号菜单查看测量报告
 
-![60c95d6a6a96c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730866196-fc3f8824-1b72-41d9-a5f4-d60d0ac95c12.png#clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=ubb5fec21&name=60c95d6a6a96c.png&originHeight=934&originWidth=1919&originalType=binary&ratio=1&rotation=0&showTitle=false&size=150297&status=error&style=none&taskId=uba668ac0-9d33-4a64-bf1c-8c03afd6657&title=)
+![60c95d6a6a96c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730866196-fc3f8824-1b72-41d9-a5f4-d60d0ac95c12.png#averageHue=%23f1f3f7&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=ubb5fec21&name=60c95d6a6a96c.png&originHeight=934&originWidth=1919&originalType=binary&ratio=1&rotation=0&showTitle=false&size=150297&status=error&style=none&taskId=uba668ac0-9d33-4a64-bf1c-8c03afd6657&title=)
 
 **对接说明：**
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 可通过维塑提供的 API 接口获取用户测量数据。
 对接成功后维塑会通过客户配置的 3.1.4 接口推送扫描 ID 等相关信息，客户根据测量项目结果访问对应接口获取数据，合成推送类型与接口关系见 3.10 说明
 
-![60eeacf9ae60c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730914618-10d9ce7c-1bce-4aa6-8cad-d16e88607362.png#clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=ub1d91831&name=60eeacf9ae60c.png&originHeight=1489&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=141435&status=error&style=none&taskId=uf6f6a4e6-7533-490c-bb8d-cb26803cbab&title=)
+![60eeacf9ae60c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730914618-10d9ce7c-1bce-4aa6-8cad-d16e88607362.png#averageHue=%230e0e0e&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=ub1d91831&name=60eeacf9ae60c.png&originHeight=1489&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=141435&status=error&style=none&taskId=uf6f6a4e6-7533-490c-bb8d-cb26803cbab&title=)
 
 **对接说明：**
 
@@ -126,7 +126,7 @@ Content-Type: application/json
 **使用说明： **
 替换设备默认显示的维塑公众号二维码，扫码后可跳转到客户自己的 APP 或小程序等其他平台，需客户自行开发扫码业务逻辑
 
-![5ddf84367d2a9.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/21666232/1660731045810-28c48c93-24eb-4873-a904-abca82b111f2.jpeg#clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u117022db&name=5ddf84367d2a9.jpg&originHeight=853&originWidth=1137&originalType=binary&ratio=1&rotation=0&showTitle=false&size=64735&status=error&style=none&taskId=u3e651514-3511-4b8b-9816-643b4035437&title=)
+![5ddf84367d2a9.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/21666232/1660731045810-28c48c93-24eb-4873-a904-abca82b111f2.jpeg#averageHue=%23fafafa&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u117022db&name=5ddf84367d2a9.jpg&originHeight=853&originWidth=1137&originalType=binary&ratio=1&rotation=0&showTitle=false&size=64735&status=error&style=none&taskId=u3e651514-3511-4b8b-9816-643b4035437&title=)
 
 **对接说明：**
 
@@ -139,7 +139,7 @@ Content-Type: application/json
 **使用说明： **
 设备添加手环对接，可通过刷手环代替扫码动作，需客户自行开发刷手环业务逻辑
 
-![60eead1988828.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731089491-8bdcc9ce-f352-41eb-be7e-fc18a1a6473d.png#clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u179a0868&name=60eead1988828.png&originHeight=1663&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=170489&status=error&style=none&taskId=uf01ca45f-90d2-4cf7-ba17-636bf26e3e0&title=)
+![60eead1988828.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731089491-8bdcc9ce-f352-41eb-be7e-fc18a1a6473d.png#averageHue=%23111111&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u179a0868&name=60eead1988828.png&originHeight=1663&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=170489&status=error&style=none&taskId=uf01ca45f-90d2-4cf7-ba17-636bf26e3e0&title=)
 
 **对接说明：**
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 **使用说明： **
 使用维塑提供的测量报告 URL 直接嵌入至客户的 APP 中
 
-![60c95dddb6d74.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731129758-ce60ca34-deae-4629-b6dc-df6f44c30c74.png#clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u566b9cf5&name=60c95dddb6d74.png&originHeight=898&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=127707&status=error&style=none&taskId=uc85782e0-efa2-4380-aa97-a33376e4987&title=)
+![60c95dddb6d74.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731129758-ce60ca34-deae-4629-b6dc-df6f44c30c74.png#averageHue=%23f2f3f8&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u566b9cf5&name=60c95dddb6d74.png&originHeight=898&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=127707&status=error&style=none&taskId=uc85782e0-efa2-4380-aa97-a33376e4987&title=)
 
 **对接说明：**
 
@@ -359,23 +359,25 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 
 **参数：**
 
-| 参数名               | 必选 | 类型   | 说明                                     |
-| -------------------- | ---- | ------ | ---------------------------------------- |
-| scan_id              | 是   | string | 扫描 ID                                  |
-| device_id            | 是   | string | 设备 ID                                  |
-| time                 | 是   | date   | 完成时间 时间格式 `YYYY-MM-DD HH:mm:ss`    |
-| data                 | 否   | object | 用户信息                                 |
-| age                  | 否   | int    | 年龄                                     |
-| birthday             | 否   | string | 生日                                     |
-| phone                | 否   | string | 手机                                     |
-| sex                  | 否   | string | f 女，m 　男                             |
-| height               | 否   | int    | 身高                                     |
-| action_status        | 是   | object | 状态信息                                 |
-| girth_status         | 否   | int    | 体围的合成状态，０失败，１成功，２超时   |
-| eval_status          | 否   | int    | 体态的合成状态，０失败，１成功，２超时   |
-| bia_status           | 否   | int    | 体成分的合成状态，０失败，１成功，２超时 |
-| eval_shoulder_status | 否   | int    | 肩部的合成状态，０失败，１成功，２超时   |
-| token                | 是   | string | 第三方接口凭证                           |
+| 参数名               | 必选 | 类型   | 说明                                       |
+| -------------------- | ---- | ------ | ------------------------------------------ |
+| scan_id              | 是   | string | 扫描 ID                                    |
+| device_id            | 是   | string | 设备 ID                                    |
+| time                 | 是   | date   | 完成时间 时间格式 2018-06-25 10:10:10      |
+| data                 | 否   | object | 用户信息                                   |
+| age                  | 否   | int    | 年龄                                       |
+| birthday             | 否   | string | 生日                                       |
+| phone                | 否   | string | 手机                                       |
+| sex                  | 否   | string | f 女，m 　男                               |
+| height               | 否   | int    | 身高                                       |
+| project              | 是   | objcet | 本次测量项目                               |
+| action_status        | 是   | object | 状态信息                                   |
+| girth_status         | 否   | int    | 体围的合成状态，０失败，１成功，２超时     |
+| eval_status          | 否   | int    | 体态的合成状态，０失败，１成功，２超时     |
+| bia_status           | 否   | int    | 体成分的合成状态，０失败，１成功，２超时   |
+| eval_shoulder_status | 否   | int    | 肩部的合成状态，０失败，１成功，２超时     |
+| vertebra_status      | 否   | int    | 脊柱侧弯的合成状态，０失败，１成功，２超时 |
+| token                | 是   | string | 第三方接口凭证                             |
 
 **格式如下**
 
@@ -388,11 +390,13 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
     "phone": "13812345678",
     "sex": "f"
   },
+  "project":["eval_status","bia_status","girth_status","eval_shoulder_status","vertebra_status"]
   "action_status":{
     "eval_status": 0,
     "bia_status": 0,
     "girth_status": 0,
-    "eval_shoulder_status": 0
+    "eval_shoulder_status": 0,
+    "vertebra_status":0
   },
   "device_id": "20041910080001",
   "scan_id": "20041910080001-a210136e-1bfb-11ea-b711-00d861a9ecd9",
@@ -1165,6 +1169,96 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | title          | string | 结论标题                                                    |
 | analysis       | string | 结论分析 若所有项均正常则返回空字符串                       |
 | advice         | string | 结论建议 若所有项均正常则返回空字符串                       |
+
+#### 3.4.6 获取脊柱侧弯文件（ve335 接口）
+
+**接口描述：**
+
+- 用于获取脊柱侧弯背面图片
+
+**请求 URL：**
+
+- `http://api.rpro3.visbody.com/v1/spine/file`
+
+**请求方式：**
+
+- GET
+
+**参数：**
+
+| 参数名  | 必选 | 类型   | 说明     |
+| ------- | ---- | ------ | -------- |
+| token   | 是   | string | 接口凭证 |
+| scan_id | 是   | string | 扫描 ID  |
+
+**返回示例**
+
+```json
+{
+  "code": 0,
+  "data": {
+    "expires_in": 7200,
+    "pic_back_url": "http://rpro3model-test.visbody.com/model/39000000000011-ee403b6a-48fc-4f63-bef5-dd36a4fb0e8c/22/0/39000000000011-ee403b6a-48fc-4f63-bef5-dd36a4fb0e8c-Anatomy-pic-2.jpg?_upt=ce6997d21672131675.479"
+  }
+}
+```
+
+#### 3.4.7 获取脊柱侧弯数据及结论（ve335 接口）
+
+**接口描述：**
+
+- 用于获取脊柱侧弯评估数据
+
+**请求 URL：**
+
+- `http://api.rpro3.visbody.com/v1/spine/conclusion`
+
+**请求方式：**
+
+- GET
+
+**参数：**
+
+| 参数名  | 必选 | 类型   | 说明     |
+| ------- | ---- | ------ | -------- |
+| token   | 是   | string | 接口凭证 |
+| scan_id | 是   | string | 扫描 ID  |
+
+**返回示例**
+
+```json
+{
+  "code": 0,
+  "data": {
+    "scoliosis": {
+      "abnormalItems": [
+        "shoulderHeightDiff",
+        "torsoDeviation"
+      ],
+      "data": {
+        "id": 2924,
+        "scanId": "39000000000011-ee403b6a-48fc-4f63-bef5-dd36a4fb0e8c",
+        "shoulderHeightDiff": 2.1,
+        "hipHeightDiff": 0,
+        "headDeviation": 0,
+        "torsoDeviation": -1.8,
+        "createTime": 1672109358
+      },
+      "riskLevel": "异常",
+      "riskTip": "您存在脊柱侧弯风险，脊柱侧弯是指脊柱的生理曲度发生改变，此病多发于青春期，且随着年龄的增长症状会逐渐加重，严重者可能影响呼吸、心脏功能，建议您到医疗机构进一步检查。"
+    },
+    "muscle_analysis": {
+      "abnormalPosture": "您脊柱侧弯相关的异常体态：高低肩左高 2.1 cm，躯干偏右 -1.8 °。",
+      "muscle": {
+        "tenseMuscle": "肩胛提肌，斜方肌上束。",
+        "weakMuscle": "前锯肌。"
+      },
+      "advise": "请根据您当前的肌肉均衡情况，加强相关训练。 日常注意调整不良姿势，单侧背包、坐姿不正确、躺在床上看书等都容易引起姿态异常，影响脊柱健康。"
+    }
+  }
+}
+Response headers
+```
 
 ### 3.7 获取报告信息及获取 pdf 文件报告信息
 
