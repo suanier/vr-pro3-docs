@@ -376,7 +376,6 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 | eval_status          | 否   | int    | 体态的合成状态，０失败，１成功，２超时     |
 | bia_status           | 否   | int    | 体成分的合成状态，０失败，１成功，２超时   |
 | eval_shoulder_status | 否   | int    | 肩部的合成状态，０失败，１成功，２超时     |
-| vertebra_status      | 否   | int    | 脊柱侧弯的合成状态，０失败，１成功，２超时 |
 | token                | 是   | string | 第三方接口凭证                             |
 
 **格式如下**
@@ -390,13 +389,12 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
     "phone": "13812345678",
     "sex": "f"
   },
-  "project":["eval_status","bia_status","girth_status","eval_shoulder_status","vertebra_status"]
+  "project":["eval_status","bia_status","girth_status","eval_shoulder_status"]
   "action_status":{
     "eval_status": 0,
     "bia_status": 0,
     "girth_status": 0,
-    "eval_shoulder_status": 0,
-    "vertebra_status":0
+    "eval_shoulder_status": 0
   },
   "device_id": "20041910080001",
   "scan_id": "20041910080001-a210136e-1bfb-11ea-b711-00d861a9ecd9",
@@ -1170,95 +1168,6 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | analysis       | string | 结论分析 若所有项均正常则返回空字符串                       |
 | advice         | string | 结论建议 若所有项均正常则返回空字符串                       |
 
-#### 3.4.6 获取脊柱侧弯文件（ve335 接口）
-
-**接口描述：**
-
-- 用于获取脊柱侧弯背面图片
-
-**请求 URL：**
-
-- `http://api.rpro3.visbody.com/v1/spine/file`
-
-**请求方式：**
-
-- GET
-
-**参数：**
-
-| 参数名  | 必选 | 类型   | 说明     |
-| ------- | ---- | ------ | -------- |
-| token   | 是   | string | 接口凭证 |
-| scan_id | 是   | string | 扫描 ID  |
-
-**返回示例**
-
-```json
-{
-  "code": 0,
-  "data": {
-    "expires_in": 7200,
-    "pic_back_url": "http://rpro3model-test.visbody.com/model/39000000000011-ee403b6a-48fc-4f63-bef5-dd36a4fb0e8c/22/0/39000000000011-ee403b6a-48fc-4f63-bef5-dd36a4fb0e8c-Anatomy-pic-2.jpg?_upt=ce6997d21672131675.479"
-  }
-}
-```
-
-#### 3.4.7 获取脊柱侧弯数据及结论（ve335 接口）
-
-**接口描述：**
-
-- 用于获取脊柱侧弯评估数据
-
-**请求 URL：**
-
-- `http://api.rpro3.visbody.com/v1/spine/conclusion`
-
-**请求方式：**
-
-- GET
-
-**参数：**
-
-| 参数名  | 必选 | 类型   | 说明     |
-| ------- | ---- | ------ | -------- |
-| token   | 是   | string | 接口凭证 |
-| scan_id | 是   | string | 扫描 ID  |
-
-**返回示例**
-
-```json
-{
-  "code": 0,
-  "data": {
-    "scoliosis": {
-      "abnormalItems": [
-        "shoulderHeightDiff",
-        "torsoDeviation"
-      ],
-      "data": {
-        "id": 2924,
-        "scanId": "39000000000011-ee403b6a-48fc-4f63-bef5-dd36a4fb0e8c",
-        "shoulderHeightDiff": 2.1,
-        "hipHeightDiff": 0,
-        "headDeviation": 0,
-        "torsoDeviation": -1.8,
-        "createTime": 1672109358
-      },
-      "riskLevel": "异常",
-      "riskTip": "您存在脊柱侧弯风险，脊柱侧弯是指脊柱的生理曲度发生改变，此病多发于青春期，且随着年龄的增长症状会逐渐加重，严重者可能影响呼吸、心脏功能，建议您到医疗机构进一步检查。"
-    },
-    "muscle_analysis": {
-      "abnormalPosture": "您脊柱侧弯相关的异常体态：高低肩左高 2.1 cm，躯干偏右 -1.8 °。",
-      "muscle": {
-        "tenseMuscle": "肩胛提肌，斜方肌上束。",
-        "weakMuscle": "前锯肌。"
-      },
-      "advise": "请根据您当前的肌肉均衡情况，加强相关训练。 日常注意调整不良姿势，单侧背包、坐姿不正确、躺在床上看书等都容易引起姿态异常，影响脊柱健康。"
-    }
-  }
-}
-Response headers
-```
 
 ### 3.7 获取报告信息及获取 pdf 文件报告信息
 
