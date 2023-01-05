@@ -1231,7 +1231,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 
 **请求 URL：**
 
-- `http://api.dpro3.visbody.com/v1/report/pdf`
+- `http://api.rpro3.visbody.com/v1/report/pdf`
 
 **请求方式：**
 
@@ -1271,7 +1271,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 
 **请求 URL：**
 
-- `http://api.dpro3.visbody.com/v1/history/data`
+- `http://api.rpro3.visbody.com/v1/history/data`
 
 **请求方式：**
 
