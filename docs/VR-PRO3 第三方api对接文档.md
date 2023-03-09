@@ -1068,7 +1068,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 	  "right_thigh_girth": 56.2,
 	  "left_calf_girth": 37.1,
 	  "right_calf_girth": 34.5,
-	  "height": 161.1
+	  "height": 161
     }
   }
 ```
@@ -1086,7 +1086,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | right_thigh_girth     | double | 右大腿围(cm) |
 | left_calf_girth       | double | 左小腿围(cm) |
 | right_calf_girth      | double | 右小腿围(cm) |
-| height                | double | 输入身高(cm) |
+| height                | int | 输入身高(cm) |
 
 #### 3.4.5 获取肩部检测数据及结论
 
