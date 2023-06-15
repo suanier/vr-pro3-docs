@@ -632,18 +632,9 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | SM      | object | 骨骼肌量（kg）       |
 | TM      | object | 无机盐（kg）         |
 | PROTEIN | object | 蛋白质（kg）         |
-| ICW     | object | 细胞内		"BMI": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"PBF": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"BMR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"WHR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"SM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"TM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"PROTEIN": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"ICW": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"ECW": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
-    }
-  }
-```
+| ICW     | object | 细胞内液（kg） 	|
+| ECW     | object | 细胞外液（kg） 	|
+
 
 
 **返回参数说明**
