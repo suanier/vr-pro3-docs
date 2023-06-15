@@ -609,7 +609,9 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 		"WHR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
 		"SM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
 		"TM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"PROTEIN": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
+		"PROTEIN": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"ICW": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"ECW": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
     }
   }
 ```
@@ -630,6 +632,194 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | SM      | object | 骨骼肌量（kg）       |
 | TM      | object | 无机盐（kg）         |
 | PROTEIN | object | 蛋白质（kg）         |
+| ICW     | object | 细胞内		"BMI": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"PBF": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"BMR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"WHR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"SM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"TM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"PROTEIN": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"ICW": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"ECW": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
+    }
+  }
+```
+
+
+**返回参数说明**
+
+
+| 参数名  | 类型   | 说明                 |
+| ------- | ------ | -------------------- |
+| WT      | object | 体重（kg）           |
+| FFM     | object | 去脂体重（kg）       |
+| BFM     | object | 体脂肪量（kg）       |
+| LM      | object | 肌肉量（kg）         |
+| TBW     | object | 身体水分（kg）       |
+| BMI     | object | 身体质量             |
+| PBF     | object | 体脂肪率（%）        |
+| BMR     | object | 基础代谢量（kcal/d） |
+| WHR     | object | 腰臀比               |
+| SM      | object | 骨骼肌量（kg）       |
+| TM      | object | 无机盐（kg）         |
+| PROTEIN | object | 蛋白质（kg）         |
+| ICW   | object | 蛋白质（kg）         |
+| ECW | object | 蛋白质（kg）         |
+
+
+**体成分范围说明**
+
+
+```
+  {
+	"l":10,        // 下限值
+	"m":15,        // 标准值
+	"h":20,        // 上限值
+	"v":30.3,      // 测量值
+	"status":3     // 状态 1 低，２正常，３高
+  }
+```
+
+
+**范围参数说明**
+
+
+| 参数名 | 类型   | 说明                    |
+| ------ | ------ | ----------------------- |
+| l      | double | 下限值                  |
+| m      | double | 标准值                  |
+| h      | double | 上限值                  |
+| v      | double | 测量值                  |
+| status | int    | 状态 1 低，２正常，３高 |
+
+
+#### 3.3.2 获取预测调节数据
+
+
+**接口描述：**
+
+
+- 用于获取身体调节量
+
+
+**请求 URL：**
+
+
+- `http:api.rpro3.visbody.com/v1/forecast/adjust`
+
+
+**Request method:**
+
+
+- GET
+
+
+**Parameter:**
+
+
+| Parameter name | Required | Type | Description |
+| ------- | ---- | ------ | -------- |
+| token   | Yes | string | Interface Credentials |
+| scan_id | Yes | string | Scan ID |
+
+
+**Back to example**
+
+
+```
+  {
+    "code": 0,
+    "data": {
+      "weight":1.8,
+	  "body_fat":-2.6,
+	  "muscle":-2.6,
+	  "gr_weight":75,		"BMI": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"PBF": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"BMR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"WHR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"SM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"TM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"PROTEIN": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"ICW": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"ECW": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
+    }
+  }
+```
+
+**返回参数说明**
+
+| 参数名  | 类型   | 说明                 |
+| ------- | ------ | -------------------- |
+| WT      | object | 体重（kg）           |
+| FFM     | object | 去脂体重（kg）       |
+| BFM     | object | 体脂肪量（kg）       |
+| LM      | object | 肌肉量（kg）         |
+| TBW     | object | 身体水分（kg）       |
+| BMI     | object | 身体质量             |
+| PBF     | object | 体脂肪率（%）        |
+| BMR     | object | 基础代谢量（kcal/d） |
+| WHR     | object | 腰臀比               |
+| SM      | object | 骨骼肌量（kg）       |
+| TM      | object | 无机盐（kg）         |
+| PROTEIN | object | 蛋白质（kg）         |
+| ICW     | object | 细胞内液（kg）         |
+| ECW     | object | 细胞外液（kg）         |
+
+**体成分范围说明**
+
+```
+  {
+	"l":10,        // 下限值
+	"m":15,        // 标准值
+	"h":20,        // 上限值
+	"v":30.3,      // 测量值
+	"status":3     // 状态 1 低，２正常，３高
+  }
+```
+
+**范围参数说明**
+
+| 参数名 | 类型   | 说明                    |
+| ------ | ------ | ----------------------- |
+| l      | double | 下限值                  |
+| m      | double | 标准值                  |
+| h      | double | 上限值                  |
+| v      | double | 测量值                  |
+| status | int    | 状态 1 低，２正常，３高 |
+
+#### 3.3.2 获取预测调节数据
+
+**接口描述：**
+
+- 用于获取身体调节量
+
+**请求 URL：**
+
+- `http://api.rpro3.visbody.com/v1/forecast/adjust`
+
+**请求方式：**
+
+- GET
+
+**参数：**
+
+| 参数名  | 必选 | 类型   | 说明     |
+| ------- | ---- | ------ | -------- |
+| token   | 是   | string | 接口凭证 |
+| scan_id | 是   | string | 扫描 ID  |
+
+**返回示例**
+
+```
+  {
+    "code": 0,
+    "data": {
+      "weight":1.8,
+	  "body_fat":-2.6,
+	  "muscle":-2.6,
+	  "gr_weight":75,
+（kg）         |
+| ECW     | object | 蛋白质（kg）         |
 
 **体成分范围说明**
 
