@@ -618,27 +618,6 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 
 **返回参数说明**
 
-| 参数名  | 类型   | 说明                 |
-| ------- | ------ | -------------------- |
-| WT      | object | 体重（kg）           |
-| FFM     | object | 去脂体重（kg）       |
-| BFM     | object | 体脂肪量（kg）       |
-| LM      | object | 肌肉量（kg）         |
-| TBW     | object | 身体水分（kg）       |
-| BMI     | object | 身体质量             |
-| PBF     | object | 体脂肪率（%）        |
-| BMR     | object | 基础代谢量（kcal/d） |
-| WHR     | object | 腰臀比               |
-| SM      | object | 骨骼肌量（kg）       |
-| TM      | object | 无机盐（kg）         |
-| PROTEIN | object | 蛋白质（kg）         |
-| ICW     | object | 细胞内液（kg） 	|
-| ECW     | object | 细胞外液（kg） 	|
-
-
-
-**返回参数说明**
-
 
 | 参数名  | 类型   | 说明                 |
 | ------- | ------ | -------------------- |
@@ -654,8 +633,8 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | SM      | object | 骨骼肌量（kg）       |
 | TM      | object | 无机盐（kg）         |
 | PROTEIN | object | 蛋白质（kg）         |
-| ICW   | object | 蛋白质（kg）         |
-| ECW | object | 蛋白质（kg）         |
+| ICW   | object | 细胞内液（kg）         |
+| ECW | object | 细胞外液（kg）         |
 
 
 **体成分范围说明**
