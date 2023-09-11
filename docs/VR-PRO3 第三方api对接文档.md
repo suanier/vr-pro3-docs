@@ -100,7 +100,7 @@ Content-Type: application/json
 对接客户的公众号，替换设备默认显示的维塑公众号二维码。
 对接成功后维塑提供报告查看地址，客户将地址自行配置到公众号菜单，用户扫码后可通过公众号菜单查看测量报告
 
-![60c95d6a6a96c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730866196-fc3f8824-1b72-41d9-a5f4-d60d0ac95c12.png#averageHue=%23f1f3f7&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=ubb5fec21&name=60c95d6a6a96c.png&originHeight=934&originWidth=1919&originalType=binary&ratio=1&rotation=0&showTitle=false&size=150297&status=error&style=none&taskId=uba668ac0-9d33-4a64-bf1c-8c03afd6657&title=)
+![60c95d6a6a96c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730866196-fc3f8824-1b72-41d9-a5f4-d60d0ac95c12.png#averageHue=%23f1f3f7&clientId=u5fb3bf40-8e0e-4&errorMessage=unknown%20error&from=ui&id=ubb5fec21&originHeight=934&originWidth=1919&originalType=binary&ratio=1&rotation=0&showTitle=false&size=150297&status=error&style=none&taskId=uba668ac0-9d33-4a64-bf1c-8c03afd6657&title=)
 
 **对接说明：**
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 可通过维塑提供的 API 接口获取用户测量数据。
 对接成功后维塑会通过客户配置的 3.1.4 接口推送扫描 ID 等相关信息，客户根据测量项目结果访问对应接口获取数据，合成推送类型与接口关系见 3.10 说明
 
-![60eeacf9ae60c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730914618-10d9ce7c-1bce-4aa6-8cad-d16e88607362.png#averageHue=%230e0e0e&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=ub1d91831&name=60eeacf9ae60c.png&originHeight=1489&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=141435&status=error&style=none&taskId=uf6f6a4e6-7533-490c-bb8d-cb26803cbab&title=)
+![60eeacf9ae60c.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660730914618-10d9ce7c-1bce-4aa6-8cad-d16e88607362.png#averageHue=%230e0e0e&clientId=u5fb3bf40-8e0e-4&errorMessage=unknown%20error&from=ui&id=ub1d91831&originHeight=1489&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=141435&status=error&style=none&taskId=uf6f6a4e6-7533-490c-bb8d-cb26803cbab&title=)
 
 **对接说明：**
 
@@ -126,7 +126,7 @@ Content-Type: application/json
 **使用说明： **
 替换设备默认显示的维塑公众号二维码，扫码后可跳转到客户自己的 APP 或小程序等其他平台，需客户自行开发扫码业务逻辑
 
-![5ddf84367d2a9.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/21666232/1660731045810-28c48c93-24eb-4873-a904-abca82b111f2.jpeg#averageHue=%23fafafa&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u117022db&name=5ddf84367d2a9.jpg&originHeight=853&originWidth=1137&originalType=binary&ratio=1&rotation=0&showTitle=false&size=64735&status=error&style=none&taskId=u3e651514-3511-4b8b-9816-643b4035437&title=)
+![5ddf84367d2a9.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/21666232/1660731045810-28c48c93-24eb-4873-a904-abca82b111f2.jpeg#averageHue=%23fafafa&clientId=u5fb3bf40-8e0e-4&errorMessage=unknown%20error&from=ui&id=u117022db&originHeight=853&originWidth=1137&originalType=binary&ratio=1&rotation=0&showTitle=false&size=64735&status=error&style=none&taskId=u3e651514-3511-4b8b-9816-643b4035437&title=)
 
 **对接说明：**
 
@@ -139,7 +139,7 @@ Content-Type: application/json
 **使用说明： **
 设备添加手环对接，可通过刷手环代替扫码动作，需客户自行开发刷手环业务逻辑
 
-![60eead1988828.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731089491-8bdcc9ce-f352-41eb-be7e-fc18a1a6473d.png#averageHue=%23111111&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u179a0868&name=60eead1988828.png&originHeight=1663&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=170489&status=error&style=none&taskId=uf01ca45f-90d2-4cf7-ba17-636bf26e3e0&title=)
+![60eead1988828.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731089491-8bdcc9ce-f352-41eb-be7e-fc18a1a6473d.png#averageHue=%23111111&clientId=u5fb3bf40-8e0e-4&errorMessage=unknown%20error&from=ui&id=u179a0868&originHeight=1663&originWidth=1974&originalType=binary&ratio=1&rotation=0&showTitle=false&size=170489&status=error&style=none&taskId=uf01ca45f-90d2-4cf7-ba17-636bf26e3e0&title=)
 
 **对接说明：**
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 **使用说明： **
 使用维塑提供的测量报告 URL 直接嵌入至客户的 APP 中
 
-![60c95dddb6d74.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731129758-ce60ca34-deae-4629-b6dc-df6f44c30c74.png#averageHue=%23f2f3f8&clientId=u5fb3bf40-8e0e-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u566b9cf5&name=60c95dddb6d74.png&originHeight=898&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=127707&status=error&style=none&taskId=uc85782e0-efa2-4380-aa97-a33376e4987&title=)
+![60c95dddb6d74.png](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731129758-ce60ca34-deae-4629-b6dc-df6f44c30c74.png#averageHue=%23f2f3f8&clientId=u5fb3bf40-8e0e-4&errorMessage=unknown%20error&from=ui&id=u566b9cf5&originHeight=898&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=127707&status=error&style=none&taskId=uc85782e0-efa2-4380-aa97-a33376e4987&title=)
 
 **对接说明：**
 
@@ -359,24 +359,23 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 
 **参数：**
 
-| 参数名               | 必选 | 类型   | 说明                                       |
-| -------------------- | ---- | ------ | ------------------------------------------ |
-| scan_id              | 是   | string | 扫描 ID                                    |
-| device_id            | 是   | string | 设备 ID                                    |
-| time                 | 是   | date   | 完成时间 时间格式 2018-06-25 10:10:10      |
-| data                 | 否   | object | 用户信息                                   |
-| age                  | 否   | int    | 年龄                                       |
-| birthday             | 否   | string | 生日                                       |
-| phone                | 否   | string | 手机                                       |
-| sex                  | 否   | string | f 女，m 　男                               |
-| height               | 否   | int    | 身高                                       |
-| project              | 是   | objcet | 本次测量项目                               |
-| action_status        | 是   | object | 状态信息                                   |
-| girth_status         | 否   | int    | 体围的合成状态，０失败，１成功，２超时     |
-| eval_status          | 否   | int    | 体态的合成状态，０失败，１成功，２超时     |
-| bia_status           | 否   | int    | 体成分的合成状态，０失败，１成功，２超时   |
-| eval_shoulder_status | 否   | int    | 肩部的合成状态，０失败，１成功，２超时     |
-| token                | 是   | string | 第三方接口凭证                             |
+| 参数名               | 必选 | 类型   | 说明                                     |
+| -------------------- | ---- | ------ | ---------------------------------------- |
+| scan_id              | 是   | string | 扫描 ID                                  |
+| device_id            | 是   | string | 设备 ID                                  |
+| time                 | 是   | date   | 完成时间 时间格式 2018-06-25 10:10:10    |
+| data                 | 否   | object | 用户信息                                 |
+| age                  | 否   | int    | 年龄                                     |
+| birthday             | 否   | string | 生日                                     |
+| phone                | 否   | string | 手机                                     |
+| sex                  | 否   | string | f 女，m 　男                             |
+| height               | 否   | int    | 身高                                     |
+| action_status        | 是   | object | 状态信息                                 |
+| girth_status         | 否   | int    | 体围的合成状态，０失败，１成功，２超时   |
+| eval_status          | 否   | int    | 体态的合成状态，０失败，１成功，２超时   |
+| bia_status           | 否   | int    | 体成分的合成状态，０失败，１成功，２超时 |
+| eval_shoulder_status | 否   | int    | 肩部的合成状态，０失败，１成功，２超时   |
+| token                | 是   | string | 第三方接口凭证                           |
 
 **格式如下**
 
@@ -389,7 +388,6 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
     "phone": "13812345678",
     "sex": "f"
   },
-  "project":["eval_status","bia_status","girth_status","eval_shoulder_status"]
   "action_status":{
     "eval_status": 0,
     "bia_status": 0,
@@ -618,7 +616,6 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 
 **返回参数说明**
 
-
 | 参数名  | 类型   | 说明                 |
 | ------- | ------ | -------------------- |
 | WT      | object | 体重（kg）           |
@@ -633,107 +630,8 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | SM      | object | 骨骼肌量（kg）       |
 | TM      | object | 无机盐（kg）         |
 | PROTEIN | object | 蛋白质（kg）         |
-| ICW   | object | 细胞内液（kg）         |
-| ECW | object | 细胞外液（kg）         |
-
-
-**体成分范围说明**
-
-
-```
-  {
-	"l":10,        // 下限值
-	"m":15,        // 标准值
-	"h":20,        // 上限值
-	"v":30.3,      // 测量值
-	"status":3     // 状态 1 低，２正常，３高
-  }
-```
-
-
-**范围参数说明**
-
-
-| 参数名 | 类型   | 说明                    |
-| ------ | ------ | ----------------------- |
-| l      | double | 下限值                  |
-| m      | double | 标准值                  |
-| h      | double | 上限值                  |
-| v      | double | 测量值                  |
-| status | int    | 状态 1 低，２正常，３高 |
-
-
-#### 3.3.2 获取预测调节数据
-
-
-**接口描述：**
-
-
-- 用于获取身体调节量
-
-
-**请求 URL：**
-
-
-- `http:api.rpro3.visbody.com/v1/forecast/adjust`
-
-
-**Request method:**
-
-
-- GET
-
-
-**Parameter:**
-
-
-| Parameter name | Required | Type | Description |
-| ------- | ---- | ------ | -------- |
-| token   | Yes | string | Interface Credentials |
-| scan_id | Yes | string | Scan ID |
-
-
-**Back to example**
-
-
-```
-  {
-    "code": 0,
-    "data": {
-      "weight":1.8,
-	  "body_fat":-2.6,
-	  "muscle":-2.6,
-	  "gr_weight":75,		"BMI": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"PBF": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"BMR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"WHR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"SM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"TM": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"PROTEIN": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"ICW": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"ECW": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
-    }
-  }
-```
-
-**返回参数说明**
-
-| 参数名  | 类型   | 说明                 |
-| ------- | ------ | -------------------- |
-| WT      | object | 体重（kg）           |
-| FFM     | object | 去脂体重（kg）       |
-| BFM     | object | 体脂肪量（kg）       |
-| LM      | object | 肌肉量（kg）         |
-| TBW     | object | 身体水分（kg）       |
-| BMI     | object | 身体质量             |
-| PBF     | object | 体脂肪率（%）        |
-| BMR     | object | 基础代谢量（kcal/d） |
-| WHR     | object | 腰臀比               |
-| SM      | object | 骨骼肌量（kg）       |
-| TM      | object | 无机盐（kg）         |
-| PROTEIN | object | 蛋白质（kg）         |
-| ICW     | object | 细胞内液（kg）         |
-| ECW     | object | 细胞外液（kg）         |
+| ICW     | object | 细胞内液（kg）       |
+| ECW     | object | 细胞外液（kg）       |
 
 **体成分范围说明**
 
@@ -785,67 +683,11 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "code": 0,
     "data": {
       "weight":1.8,
-	  "body_fat":-2.6,
-	  "muscle":-2.6,
-	  "gr_weight":75,
-（kg）         |
-| ECW     | object | 蛋白质（kg）         |
-
-**体成分范围说明**
-
-```
-  {
-	"l":10,        // 下限值
-	"m":15,        // 标准值
-	"h":20,        // 上限值
-	"v":30.3,      // 测量值
-	"status":3     // 状态 1 低，２正常，３高
-  }
-```
-
-**范围参数说明**
-
-| 参数名 | 类型   | 说明                    |
-| ------ | ------ | ----------------------- |
-| l      | double | 下限值                  |
-| m      | double | 标准值                  |
-| h      | double | 上限值                  |
-| v      | double | 测量值                  |
-| status | int    | 状态 1 低，２正常，３高 |
-
-#### 3.3.2 获取预测调节数据
-
-**接口描述：**
-
-- 用于获取身体调节量
-
-**请求 URL：**
-
-- `http://api.rpro3.visbody.com/v1/forecast/adjust`
-
-**请求方式：**
-
-- GET
-
-**参数：**
-
-| 参数名  | 必选 | 类型   | 说明     |
-| ------- | ---- | ------ | -------- |
-| token   | 是   | string | 接口凭证 |
-| scan_id | 是   | string | 扫描 ID  |
-
-**返回示例**
-
-```
-  {
-    "code": 0,
-    "data": {
-      "weight":1.8,
-	  "body_fat":-2.6,
-	  "muscle":-2.6,
-	  "gr_weight":75,
-	  "gr_body_fat":12.3,
-	  "gr_muscle":15.1,
+  	  "body_fat":-2.6,
+  	  "muscle":-2.6,
+  	  "gr_weight":75,
+  	  "gr_body_fat":12.3,
+  	  "gr_muscle":15.1
     }
   }
 ```
@@ -888,9 +730,9 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
   {
     "code": 0,
     "data": {
-		"va_grade":9,
-		"body_age":18,
-		"body_share":3
+  		"va_grade":9,
+  		"body_age":18,
+  		"body_share":3
     }
   }
 ```
@@ -970,15 +812,15 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "code": 0,
     "data": {
     	"BFMLA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"BFMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"BFMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"BFMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"BFMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"LMLA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"LMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"LMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"LMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-		"LMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
+  		"BFMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"BFMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"BFMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"BFMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"LMLA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"LMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"LMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"LMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+  		"LMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
     }
   }
 ```
@@ -1050,11 +892,11 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "code": 0,
     "data": {
       "model_url": "MODEL_URL",
-	  "json_url": "JSON_URL",
-	  "pic_front_url": "PIC_FRONT_URL",
-	  "pic_left_url": "PIC_LEFT_URL",
-	  "pic_right_url": "PIC_RIGHT_URL",
-	  "pic_top_url": "PIC_TOP_URL",
+  	  "json_url": "JSON_URL",
+  	  "pic_front_url": "PIC_FRONT_URL",
+  	  "pic_left_url": "PIC_LEFT_URL",
+  	  "pic_right_url": "PIC_RIGHT_URL",
+  	  "pic_top_url": "PIC_TOP_URL",
       "expires_in": 7200
     }
   }
@@ -1197,7 +1039,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "data": {
       "model_url": "MODEL_URL",
       "json_url": "JSON_URL",
-	  "pic_measure_url": "PIC_MEASURE_URL",
+	  	"pic_measure_url": "PIC_MEASURE_URL",
       "expires_in": 7200
     }
   }
@@ -1241,14 +1083,14 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "data": {
       "bust_girth": 30.6,
       "waist_girth": 30.8,
-	  "hip_girth": 93.8,
-	  "left_upper_arm_girth": 90,
-	  "right_upper_arm_girth": 99.8,
-	  "left_thigh_girth": 58,
-	  "right_thigh_girth": 56.2,
-	  "left_calf_girth": 37.1,
-	  "right_calf_girth": 34.5,
-	  "height": 161
+  	  "hip_girth": 93.8,
+  	  "left_upper_arm_girth": 90,
+  	  "right_upper_arm_girth": 99.8,
+  	  "left_thigh_girth": 58,
+  	  "right_thigh_girth": 56.2,
+  	  "left_calf_girth": 37.1,
+  	  "right_calf_girth": 34.5,
+  	  "height": 161
     }
   }
 ```
@@ -1266,7 +1108,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | right_thigh_girth     | double | 右大腿围(cm) |
 | left_calf_girth       | double | 左小腿围(cm) |
 | right_calf_girth      | double | 右小腿围(cm) |
-| height                | int | 输入身高(cm) |
+| height                | int    | 输入身高(cm) |
 
 #### 3.4.5 获取肩部检测数据及结论
 
@@ -1347,7 +1189,6 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | title          | string | 结论标题                                                    |
 | analysis       | string | 结论分析 若所有项均正常则返回空字符串                       |
 | advice         | string | 结论建议 若所有项均正常则返回空字符串                       |
-
 
 ### 3.7 获取报告信息及获取 pdf 文件报告信息
 
@@ -1430,8 +1271,8 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
   {
 	  "code": 0,
 	  "data": {
-		"url": "https://print.visbodyfit.com/report/vr-pro3/pdf/3404191208001290dcc82d-eddd-11eb-a7ae-704d7b2aef30-vrpro3-test.pdf?_upt=00f370fa1642650127.657",
-		"expires_in": 7200
+  		"url": "https://print.visbodyfit.com/report/vr-pro3/pdf/3404191208001290dcc82d-eddd-11eb-a7ae-704d7b2aef30-vrpro3-test.pdf?_upt=00f370fa1642650127.657",
+  		"expires_in": 7200
 	  }
   }
 ```
