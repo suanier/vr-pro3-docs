@@ -10,6 +10,7 @@
 		3.1.3 第三方刷卡（手环）登录验证
 		3.1.4 维塑推送合成通知消息
 		3.1.5 第三方状态码
+    3.1.6 第三方人脸推送地址
 	3.2 获取维塑接口凭证
 		3.2.1 获取维塑接口凭证
 		3.2.2 用户信息绑定
@@ -42,6 +43,7 @@
 | 获取第三方凭证接口         | 获取可访问第三方接口凭证的地址。由第三方客户提供，接口格式、传入返回参数参照 3.1.1                                                           |
 | 请求第三方二维码接口       | 用户在设备端完成测量后的结果二维码，由第三方客户提供，接口格式、传入返回参数参照 3.1.2                                                       |
 | 第三方刷卡（手环）登录验证 | 维塑服务调用此接口向第三方进行刷卡或手环用户身份验证。由第三方客户提供，接口格式、传入返回参数参照 3.1.3                                     |
+| 第三方人脸推送地址         | 维塑服务调用此接口向第三方推送本次测量的基本信息。由第三方客户提供，接口格式、传入返回参数参照 3.1.6                                         |
 | 维塑推送合成通知消息       | 体测、体态、节段分布结果及扫描相关信息，调用此接口向第三方服务推送信息。由第三方客户提供，接口格式、传入返回参数参照 3.1.4                   |
 | 获取维塑接口凭证           | 第三方客户调用此接口获取维塑相关接口凭证，vfid 和 vfsecret 从维塑管理平台获取                                                                |
 | 用户信息绑定               | 第三方 app 扫描设备端二维码后，在第三方后台验证用户和设备或第三方验证 RFID（手环）用户身份通过后，调用此接口通知维塑后台服务从而发起合成请求 |
@@ -90,9 +92,9 @@ Content-Type: application/json
 
 ### 3.1 第三方客户对接说明
 
-目前支持公众号对接、API 对接、二维码对接、手环对接、APP 对接 5 种方式。
+目前支持公众号对接、API 对接、二维码对接、手环对接、APP 对接、人脸对接 6 种方式。
 
-> 1.公众号与二维码对接数据不共享故不可同时配置，同时配置时优先使用二维码对接 2.手环对接和二维码对接可同时配置 3.使用 APP 对接需进行二维码或手环对接
+> 1.公众号与二维码对接数据不共享故不可同时配置，同时配置时优先使用二维码对接 2.手环对接、二维码对接和人脸对接可同时配置 3.使用 APP 对接需进行二维码或手环对接
 
 #### 1. 公众号对接
 
@@ -179,11 +181,24 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 | mobile    | 是   | string | 扫描用户手机号                                     |
 | third_uid | 是   | string | 第三方用户唯一标识   即 3.2.2 用户信息绑定接口参数 |
 
+#### 6.人脸对接
+
+**使用说明：**
+用户在设备端测量完成后，设备端会提示用户进行刷脸认证，此时设备端会调用 3.1.6 接口，将本次测量的基本信息推送至该接口
+
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/21571470/1695018549713-bebd7f58-6f5c-412c-b447-1728fddca408.png#averageHue=%23f7f7f7&clientId=u8bdada44-e406-4&from=paste&height=679&id=u0e074632&originHeight=679&originWidth=795&originalType=binary&ratio=1&rotation=0&showTitle=false&size=53912&status=done&style=none&taskId=u436c3b6b-eb74-4d44-b4bb-7da56551043&title=&width=795)
+
+**对接说明：**
+
+- 申请 API 对接权限
+- 通过维塑管理平台 API 对接设置配置 3.1.1、3.1.4、3.1.6 接口
+- 用户刷人脸后通过调用维塑 3.2.2 接口发起用户信息绑定及合成
+
 #### 3.1.1 第三方接口凭证获取
 
 **接口描述：**
 
-由客户提供获取可访问第三方接口如 3.1.2、3.1.3、3.1.4 等接口的凭证地址
+由客户提供获取可访问第三方接口如 3.1.2、3.1.3、3.1.4、3.1.6 等接口的凭证地址
 
 **请求 URL 格式要求：**
 
@@ -439,6 +454,53 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 | 30003  | 手环用户信息不完整       |
 | 30004  | 会籍已过期               |
 
+#### 3.1.6 第三方人脸地址
+
+**接口描述：**
+
+用户在设备端测量完成后，在等待刷人脸界面时，调用此接口向第三方服务推送本次测量的信息
+
+**请求 URL 格式要求：**
+
+- `<http|https>://<域名>/<path>`
+- `http://<host>:<port>/<path>`
+
+**请求方式：**
+
+- POST
+
+**参数：**
+
+| 参数名    | 必选 | 类型   | 说明           |
+| --------- | ---- | ------ | -------------- |
+| scan_id   | 是   | string | 扫描 ID        |
+| device_id | 是   | string | 设备 ID        |
+| token     | 是   | string | 第三方接口凭证 |
+
+**正常时返回示例**
+
+```
+  {
+    "code": 0
+  }
+```
+
+**错误时返回示例**
+
+```
+  {
+    "code": 30001,
+    "error_msg": 'ERROR_MSG'
+  }
+```
+
+**返回参数说明**
+
+| 参数名    | 类型   | 说明                              |
+| --------- | ------ | --------------------------------- |
+| code      | int    | 状态码 ,返回状态码参考 3.1.5 说明 |
+| error_msg | string | 错误信息                          |
+
 ### 3.2 获取维塑接口凭证
 
 #### 3.2.1 获取维塑接口凭证
@@ -509,7 +571,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 
 **接口描述：**
 
-- 第三方 app 扫描设备端二维码后，在第三方后台验证用户和设备或第三方验证 RFID（手环）用户身份通过后，调用此接口通知维塑后台服务从而发起合成请求
+- 第三方 app 扫描设备端二维码后，在第三方后台验证用户和设备或第三方验证 RFID（手环）用户身份通过后，或推送测量信息到第三方配置的人脸对接地址，调用此接口通知维塑后台服务从而发起合成请求
 
 **请求 URL：**
 
@@ -683,11 +745,11 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "code": 0,
     "data": {
       "weight":1.8,
-  	  "body_fat":-2.6,
-  	  "muscle":-2.6,
-  	  "gr_weight":75,
-  	  "gr_body_fat":12.3,
-  	  "gr_muscle":15.1
+	  "body_fat":-2.6,
+	  "muscle":-2.6,
+	  "gr_weight":75,
+	  "gr_body_fat":12.3,
+	  "gr_muscle":15.1,
     }
   }
 ```
@@ -730,9 +792,9 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
   {
     "code": 0,
     "data": {
-  		"va_grade":9,
-  		"body_age":18,
-  		"body_share":3
+		"va_grade":9,
+		"body_age":18,
+		"body_share":3
     }
   }
 ```
@@ -812,15 +874,15 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "code": 0,
     "data": {
     	"BFMLA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"BFMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"BFMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"BFMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"BFMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"LMLA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"LMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"LMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"LMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
-  		"LMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
+		"BFMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"BFMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"BFMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"BFMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"LMLA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"LMRA": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"LMTR": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"LMLL": {"l":10,"m":15,"h":20,"v":30.3,"status":3},
+		"LMRL": {"l":10,"m":15,"h":20,"v":30.3,"status":3}
     }
   }
 ```
@@ -892,11 +954,11 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "code": 0,
     "data": {
       "model_url": "MODEL_URL",
-  	  "json_url": "JSON_URL",
-  	  "pic_front_url": "PIC_FRONT_URL",
-  	  "pic_left_url": "PIC_LEFT_URL",
-  	  "pic_right_url": "PIC_RIGHT_URL",
-  	  "pic_top_url": "PIC_TOP_URL",
+	  "json_url": "JSON_URL",
+	  "pic_front_url": "PIC_FRONT_URL",
+	  "pic_left_url": "PIC_LEFT_URL",
+	  "pic_right_url": "PIC_RIGHT_URL",
+	  "pic_top_url": "PIC_TOP_URL",
       "expires_in": 7200
     }
   }
@@ -1039,7 +1101,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "data": {
       "model_url": "MODEL_URL",
       "json_url": "JSON_URL",
-	  	"pic_measure_url": "PIC_MEASURE_URL",
+	  "pic_measure_url": "PIC_MEASURE_URL",
       "expires_in": 7200
     }
   }
@@ -1083,14 +1145,14 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
     "data": {
       "bust_girth": 30.6,
       "waist_girth": 30.8,
-  	  "hip_girth": 93.8,
-  	  "left_upper_arm_girth": 90,
-  	  "right_upper_arm_girth": 99.8,
-  	  "left_thigh_girth": 58,
-  	  "right_thigh_girth": 56.2,
-  	  "left_calf_girth": 37.1,
-  	  "right_calf_girth": 34.5,
-  	  "height": 161
+	  "hip_girth": 93.8,
+	  "left_upper_arm_girth": 90,
+	  "right_upper_arm_girth": 99.8,
+	  "left_thigh_girth": 58,
+	  "right_thigh_girth": 56.2,
+	  "left_calf_girth": 37.1,
+	  "right_calf_girth": 34.5,
+	  "height": 161
     }
   }
 ```
@@ -1271,8 +1333,8 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
   {
 	  "code": 0,
 	  "data": {
-  		"url": "https://print.visbodyfit.com/report/vr-pro3/pdf/3404191208001290dcc82d-eddd-11eb-a7ae-704d7b2aef30-vrpro3-test.pdf?_upt=00f370fa1642650127.657",
-  		"expires_in": 7200
+		"url": "https://print.visbodyfit.com/report/vr-pro3/pdf/3404191208001290dcc82d-eddd-11eb-a7ae-704d7b2aef30-vrpro3-test.pdf?_upt=00f370fa1642650127.657",
+		"expires_in": 7200
 	  }
   }
 ```
