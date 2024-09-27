@@ -61,7 +61,7 @@
 | :--- | :--- |
 | key | vfUDDGigy6bVTTfP |
 | secret | Esxo0aYRFNALB8h8WXjAZjvIFxJnVt0v |
-| scanid | 34042104080001-a382adea-cea9-11eb-89dc-300ed55248eb |
+| scanid | <font style="color:rgb(0, 0, 0);">M6C0123406789105-2c626d78-3726-4e29-b100-88d067b6dde1</font> |
 
 
 
@@ -192,28 +192,9 @@ Content-Type: application/json
 
 
 
-#### 4. 手环对接
-  
-**使用说明： **  
-设备添加手环对接，可通过刷手环代替扫码动作，需客户自行开发刷手环业务逻辑
 
 
-
-![](https://cdn.nlark.com/yuque/0/2022/png/21666232/1660731089491-8bdcc9ce-f352-41eb-be7e-fc18a1a6473d.png)
-
-
-
-**对接说明：**
-
-
-
-+ 申请API对接权限
-+ 通过维塑管理平台API对接设置配置3.1.1、3.1.3、3.1.4接口
-+ 用户刷手环后通过维塑3.2.2接口发起用户信息绑定及合成
-
-
-
-#### 5. APP对接
+#### 4. APP对接
   
 **使用说明： **  
 使用维塑提供的测量报告URL直接嵌入至客户的APP中
@@ -261,27 +242,6 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 | mobile | 是 | string | 扫描用户手机号 |
 | third_uid | 是 | string | 第三方用户唯一标识  即 3.2.2 用户信息绑定接口参数 |
 
-
-#### 6.人脸对接
-
-
-**使用说明：**
-
-用户在设备端测量完成后，设备端会提示用户进行刷脸认证，此时设备端会调用3.1.6接口，将本次测量的基本信息推送至该接口
-
-
-
-![](https://cdn.nlark.com/yuque/0/2023/png/21571470/1695018549713-bebd7f58-6f5c-412c-b447-1728fddca408.png)
-
-
-
-**对接说明：**
-
-****
-
-+ 申请API对接权限
-+ 通过维塑管理平台API对接设置配置3.1.1、3.1.4、3.1.6接口
-+ 用户刷人脸后通过调用维塑3.2.2接口发起用户信息绑定及合成
 
 
 
@@ -505,8 +465,6 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 | girth_status | 否 | int | 体围的合成状态，０失败，１成功，２超时 |
 | eval_status | 否 | int | 体态的合成状态，０失败，１成功，２超时 |
 | bia_status | 否 | int | 体成分的合成状态，０失败，１成功，２超时 |
-| eval_shoulder_status | 否 | int | 肩部的合成状态，０失败，１成功，２超时 |
-| nutrition_status | 否 | int | 无电流营养分析合成状态<br/>０失败，１成功，２超时 |
 | token | 是 | string | 第三方接口凭证 |
 
 
@@ -527,7 +485,7 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
     "girth_status": 0,
     "eval_shoulder_status": 0
   },
-  "project":["girth_status","nutrition_status"]
+  "project":["girth_status"]
   "device_id": "20041910080001",
   "scan_id": "20041910080001-a210136e-1bfb-11ea-b711-00d861a9ecd9",
   "time": "2019-12-11 17:56:15",
@@ -578,7 +536,8 @@ http://app-rpro3.visbody.com/appAuth/menuCallBack
 | 30004 | 会籍已过期 |
 
 
-#### 3.1.6 第三方人脸地址
+
+
 **接口描述：**
 
 用户在设备端测量完成后，在等待刷人脸界面时，调用此接口向第三方服务推送本次测量的信息
@@ -2467,17 +2426,15 @@ const footContent = [
 | :--- | --- |
 | 身体成分测量 | bia_status |
 | 体态评估测量 | eval_status，girth_status |
-| 肩部功能测量 | eval_shoulder_status |
 
 
 **合成推送类型与接口关系如下：**
 
 | 合成推送项目 | 说明 | 可访问接口 |
-| --- | :--- | --- |
+| :--- | :--- | --- |
 | bia_status | 体成分 | 3.3.1 |
 | eval_status | 静态体态 | 3.4.1、3.4.2, 3.4.3 |
 | girth_status | 围度测量 | 3.4.4、3.4.5 |
-| nutrition_status | 无电流营养分析数据 | 3.5.1, 3.5.2,  3.5.3 |
 
 
 ** 3.7.1接口特别说明：**  
