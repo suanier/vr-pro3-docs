@@ -879,7 +879,7 @@ $headers[]  =  "Authorization: Bearer ". $vfToken;
 | mobile | 是 | string | 手机号 |
 | sex | 是 | int | 性别 1男 2女 |
 | height | 是 | int | 身高  110 ~ 205 单位cm |
-| birthday | 是 | string | 生日 格式 yyyy-MM-dd 注意周岁范围需在 5 ~ 70之间 |
+| birthday | 是 | string | 生日 格式 yyyy-MM-dd 注意周岁范围需在 3 ~ 99之间 |
 | token | 是 | string | 接口凭证 |
 
 
